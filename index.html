@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/answers-buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/canvas-boxes.css">
+    <link rel="stylesheet" type="text/css" href="css/canvas.css"> 
+    <link rel="stylesheet" type="text/css" href="css/game-over.css">
+    <link rel="stylesheet" type="text/css" href="css/grand-container.css">
+    <link rel="stylesheet" type="text/css" href="css/questions-continue-buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/questions-images.css">
+    <link rel="stylesheet" type="text/css" href="css/questions.css">
+    <link rel="stylesheet" type="text/css" href="css/rainbow-effect.css">
+    <link rel="stylesheet" type="text/css" href="css/retro-game-button.css">
+    <link rel="stylesheet" type="text/css" href="css/right-answer-notification.css">
+    <link rel="stylesheet" type="text/css" href="css/root.css">
+    <link rel="stylesheet" type="text/css" href="css/start-game.css">
+    <link rel="stylesheet" type="text/css" href="css/text-numbers-resize.css">
+    <link rel="stylesheet" type="text/css" href="css/victory.css">
+    <link rel="stylesheet" type="text/css" href="css/wrong-answer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    <title>Miau está Perdido?</title>
+</head>
+
+<body>
+    <div id="grand-container">
+
+        <!-- START GAME CONTAINER -->
+
+        <div id="start-game-container">
+            <ul class="c-rainbow">
+                <li class="c-rainbow__layer c-rainbow__layer--white">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--orange">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--red">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--violet">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--blue">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--green">MIAU ESTÁ<br>PERDIDO?</li>
+                <li class="c-rainbow__layer c-rainbow__layer--yellow">MIAU ESTÁ<br>PERDIDO?</li>
+               </ul>
+        </div>
+        <div id="start-game-wrapper">  
+            <button class="start-game-btn" id="start-game-button">Iniciar jogo</button>
+            <audio id="soundtrack" src="soundtrack/bgm.mp3"></audio>
+        </div>
+
+        <!-- CANVAS CONTAINER -->
+
+        <div id="canvas-container">
+
+            <div id="canvas-wrapper">
+                <canvas class="canvas" id="step-one-canvas" width="1000" height="500"></canvas>
+                <canvas class="canvas" id="step-two-canvas" width="1000" height="500"></canvas>
+                <canvas class="canvas" id="step-three-canvas" width="1000" height="500"></canvas>
+                <canvas class="canvas" id="step-four-canvas" width="1000" height="500"></canvas>
+                <canvas class="canvas" id="step-five-canvas" width="1000" height="500"></canvas>
+                <audio id="victory-sound" src="soundtrack/victory.mp3"></audio>
+            </div>
+
+            <!-- CANVAS BOXES -->
+
+            <div id="canvas-box-one">
+                <div class="canvas-boxes" id="trophies-box">
+                    T<br><br>R<br><br>O<br><br>P<br><br>H<br><br>I<br><br>E<br><br>S
+                </div>
+            </div>
+
+            <!-- QUESTION 1 -->
+
+            <div id="canvas-box-two">
+                <div class="canvas-boxes" id="question-box-one">
+                    <div class="questions">
+                        <p class="initial-question-text">
+                            Qual <span class="text-size">é</span> a resposta correta?</p>
+                    </div>
+
+                    <div class="cat-images">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat"> =
+                        <span class="number-size">3</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat"> =
+                        <span class="number-size">4</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat">+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat"> =
+                        <img src="https://i.imgur.com/BLzF7pI.png" class="question-mark">
+
+                        <!-- QUESTION 1 BUTTONS -->
+
+                        <div class="answers">
+                            <button class="answer-button" id="question-one-button-one">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">1</span></p>
+                            </button>
+                            <button class="answer-button" id="question-one-button-two">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">2</span></p>
+                            </button>
+                            <button class="answer-button" id="question-one-button-three">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">3</span></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 2 -->
+
+            <div id="canvas-box-three">
+                <div class="canvas-boxes" id="question-box-two">
+
+                    <div class="questions">
+                        <p class="initial-question-text">
+                            Qual <span class="text-size">é</span> a resposta correta?</p>
+                    </div>
+
+                    <div class="cat-images">
+
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">1</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">-
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">2</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">3</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <img src="https://i.imgur.com/BLzF7pI.png" class="question-mark-two">
+
+                        <!-- QUESTION 2 BUTTONS -->
+
+                        <div class="answers">
+                            <button class="answer-button" id="question-two-button-one">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">1</span></p>
+                            </button>
+                            <button class="answer-button" id="question-two-button-two">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">2</span></p>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 3 -->
+
+            <div id="canvas-box-three">
+                <div class="canvas-boxes" id="question-box-three">
+
+                    <div class="questions">
+                        <p class="initial-question-text">
+                            Qual <span class="text-size">é</span> a resposta correta?</p>
+                    </div>
+
+                    <div class="cat-images">
+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">1</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">2</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> +
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <span class="number-size-b">1</span>
+                        <br><br>
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> =
+                        <img src="https://i.imgur.com/BLzF7pI.png" class="question-mark-two">
+
+                        <!-- QUESTION 3 BUTTONS -->
+
+                        <div class="answers">
+                            <button class="answer-button" id="question-three-button-one">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">0</span></p>
+                            </button>
+                            <button class="answer-button" id="question-three-button-two">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">1</span></p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 4 -->
+
+            <div id="canvas-box-three">
+                <div class="canvas-boxes" id="question-box-four">
+
+                    <div class="questions">
+                        <p class="initial-question-text">
+                            Qual <span class="text-size">é</span> a resposta correta?</p>
+                    </div>
+
+                    <div class="cat-images">
+
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> +
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> = 
+                        <span class="number-size-b">3</span>
+                        <br><br>                        
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> - 
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> +  
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> +
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> =
+                        <span class="number-size-b">4</span>
+                        <br><br>                        
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> + 
+                        
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two">
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> 
+                        <img src="https://i.imgur.com/jEQYpZ6.png" class="question-cat-two"> -                        
+                        <img src="https://i.imgur.com/oPoKSfV.png" class="question-cat-two"> = 
+                        <img src="https://i.imgur.com/BLzF7pI.png" class="question-mark-two"> 
+
+                        <!-- QUESTION 4 BUTTONS -->
+
+                        <div class="answers">
+                            <button class="answer-button" id="question-four-button-one">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">3</span></p>
+                            </button>
+                            <button class="answer-button" id="question-four-button-two">
+                                <p class="answer-button-text">A resposta correta <span class="text-size">é</span> <span
+                                        class="answer-number-size">4</span></p>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUESTION 1 RIGHT ANSWER BOX -->
+
+            <div id="canvas-sub-container-five">
+                <div class="right-answer-notification" id="right-answer-box-one">
+                    <p id="right-answer-comment-one">Resposta correta!</p>
+                    <button class="continue-button" id="continue-button-one">Continuar</button>
+                </div>
+            </div>
+
+            <!-- QUESTION 2 RIGHT ANSWER BOX -->
+
+            <div id="canvas-sub-container-five">
+                <div class="right-answer-notification" id="right-answer-box-two">
+                    <p id="right-answer-comment-two">Resposta correta!</p>
+                    <button class="answer-button" id="continue-button-two">Continuar</button>
+                </div>
+            </div>
+
+            <!-- QUESTION 3 RIGHT ANSWER BOX -->
+
+            <div id="canvas-sub-container-five">
+                <div class="right-answer-notification" id="right-answer-box-three">
+                    <p id="right-answer-comment-three">Resposta correta!</p>
+                    <button class="answer-button" id="continue-button-three">Continuar</button>
+                </div>
+            </div>
+
+            <!-- QUESTION 4 RIGHT ANSWER BOX -->
+
+            <div id="canvas-sub-container-five">
+                <div class="right-answer-notification" id="right-answer-box-four">
+                    <p id="right-answer-comment-four">Resposta correta!</p>
+                    <button class="answer-button" id="continue-button-four">Continuar</button>
+                </div>
+            </div>
+
+            <!-- WRONG ANSWER BOX -->
+
+            <div id="canvas-wrong-answer-box-one">
+                <div class="wrong-answer-notification" id="wrong-answer-notification-one">
+                    <p class="wrong-answer-comment">Resposta incorreta!<br>
+                        <span class="resize-wrong-notification">Tente mais uma vez</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="canvas-wrong-answer-box-two">
+                <div class="wrong-answer-notification" id="wrong-answer-notification-two">
+                    <p class="wrong-answer-comment">Resposta incorreta!<br>
+                        <span class="resize-wrong-notification">Tente mais uma vez</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="canvas-wrong-answer-box-three">
+                <div class="wrong-answer-notification" id="wrong-answer-notification-three">
+                    <p class="wrong-answer-comment">Resposta incorreta!<br>
+                        <span class="resize-wrong-notification">Tente mais uma vez</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="canvas-wrong-answer-box-four">
+                <div class="wrong-answer-notification" id="wrong-answer-notification-four">
+                    <p class="wrong-answer-comment">Resposta incorreta!<br>
+                        <span class="resize-wrong-notification">Tente mais uma vez</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- VICTORY -->
+
+            <div id="canvas-victory-box">
+                <div id="victory-notification">
+                    <p id="victory-comment">Fim de jogo!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="js/constants.js"></script>
+<script src="js/transitionFunctions.js"></script>
+<script src="js/initialValues.js"></script>
+<script src="js/onClicks.js"></script>
+<script src="js/clearCanvas.js"></script>
+<script src="js/cat.js"></script>
+<script src="js/main.js"></script>
+
+</html>
