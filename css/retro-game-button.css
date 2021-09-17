@@ -1,0 +1,45 @@
+.retro-game-btn {
+    background: #000;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    /* text-transform: uppercase; */
+    padding: 10px 20px 10px 20px;
+    font-family: var(--retro-game-font);
+    text-decoration: none;
+    box-shadow: inset -4px -4px 0px 0px #000;
+}
+
+.retro-game-btn:hover, .retro-game-btn:focus {
+    background: #FFF;
+    box-shadow: inset -6px -6px 0px 0px #000;
+    color: #000;
+}
+
+.retro-game-btn:active {
+    box-shadow: inset 4px 4px 0px 0px #000;
+}
+
+.retro-game-btn:before, .retro-game-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.retro-game-btn:before {
+    top: -6px;
+    left: 0;
+    border-top: 6px #FFF solid;
+    border-bottom: 6px #FFF solid;
+}
+
+.retro-game-btn:after {
+    left: -6px;
+    top: 0;
+    border-left: 6px #FFF solid;
+    border-right: 6px #FFF solid;
+}

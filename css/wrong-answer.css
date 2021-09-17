@@ -1,0 +1,46 @@
+.wrong-answer-notification {
+    background-color: var(--darkblue);
+    border-top: 2px solid var(--neon-blue);
+    border-bottom: 2px solid var(--neon-blue);
+    border-radius: 30px;
+    font-family: var(--retro-game-font);
+    text-transform: uppercase;    
+    font-size: 1em;        
+    padding: 30px 10px 30px 10px;    
+    width: 480px;
+    z-index: 15;
+}
+
+.wrong-answer-comment {
+    display: grid;
+    justify-items: center;    
+    font-size: 1.3em; 
+}
+
+#wrong-answer-notification-one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, 120%);
+}
+
+#wrong-answer-notification-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, 120%);
+}
+
+#wrong-answer-notification-three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(12%, -230%);
+}
+
+#wrong-answer-notification-four {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, 160%);
+}

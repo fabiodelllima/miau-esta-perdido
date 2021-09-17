@@ -1,0 +1,17 @@
+#grand-container {
+    position: relative;
+    background-color: #1f123a;
+    background-color: #4e3d6a;
+    background-color: #1f123a;
+    background-color: #51144e;
+    /* background-image: linear-gradient(0deg, #28002c 60%, #FD4F50); */
+    /* background-image: linear-gradient(0deg, #4D153C 60%, #B30F40); */
+    /* background-image: linear-gradient(0deg, #2AA9E9 60%, #005AFF); */
+    /* background-image: linear-gradient(0deg, #051960 20%, #591DA9); */
+    background-image: linear-gradient(0deg, #51144e 60%, #1f123a);
+    /* background-image: linear-gradient(0deg, #4D153C, #B30F40); */
+    /* border: 2px dashed rgb(51, 255, 0); */
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}

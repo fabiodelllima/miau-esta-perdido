@@ -1,0 +1,58 @@
+.continue-button {
+    background-color: var(--neon-blue);
+    font-family: var(--retro-game-font);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    margin: 8px auto 0 auto;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-image: linear-gradient(#0DBEBA, #00FFFB);
+}
+
+#continue-button-one {
+    border: 1px solid var(--neon-blue);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#continue-button-one:hover {
+    border: 1px solid var(--neon-blue);
+    color: var(--darkblue);
+}
+
+#continue-button-two {
+    border: 1px solid var(--neon-blue);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#continue-button-two:hover {
+    border: 1px solid var(--neon-blue);
+    color: var(--darkblue);
+}
+
+#continue-button-three {
+    border: 1px solid var(--neon-blue);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#continue-button-three:hover {
+    border: 1px solid var(--neon-blue);
+    color: var(--darkblue);
+}
+
+#continue-button-four {
+    border: 1px solid var(--neon-blue);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#continue-button-four:hover {
+    border: 1px solid var(--neon-blue);
+    color: var(--darkblue);
+}

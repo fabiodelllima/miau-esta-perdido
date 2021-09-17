@@ -1,0 +1,23 @@
+.answers {
+    margin: 10px 0 0 0;
+}
+
+.answer-button-text {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.answer-button {
+    background-color: var(--neon-blue);
+    font-family: var(--retro-game-font);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    margin: 8px auto 0 auto;
+    cursor: pointer;
+}
+
+.answer-button:hover {
+    background-image: linear-gradient(#0DBEBA, #00FFFB);
+}

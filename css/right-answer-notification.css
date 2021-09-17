@@ -1,0 +1,76 @@
+.right-answer-notification {
+    background-color: var(--darkblue);
+    border: 1px solid var(--neon-blue);
+    border-radius: 30px;
+    font-family: var(--retro-game-font);
+    text-transform: uppercase;    
+    font-size: 1em;    
+}
+
+#right-answer-box-one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;    
+    width: 600px;
+    z-index: 10;
+}
+
+#right-answer-comment-one {
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;   
+}
+
+#right-answer-box-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;    
+    width: 600px;
+    z-index: 10;
+}
+
+#right-answer-comment-two {
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;   
+}
+
+#right-answer-box-three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;    
+    width: 600px;
+    z-index: 10;
+}
+
+#right-answer-comment-three {
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;   
+}
+
+#right-answer-box-four {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;    
+    width: 600px;
+    z-index: 10;
+}
+
+#right-answer-comment-four {
+    display: grid;
+    justify-items: center;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;   
+}

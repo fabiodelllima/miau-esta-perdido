@@ -1,0 +1,21 @@
+.text-size {
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+.number-size {
+    font-size: 2em;
+}
+
+.number-size-b {
+    font-size: 1.8em;
+}
+
+.answer-number-size {
+    font-size: 130%;
+    text-decoration: underline;
+}
+
+.resize-wrong-notification {
+    font-size: 0.6em;
+}

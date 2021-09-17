@@ -1,0 +1,38 @@
+/* CANVAS CONTAINER */
+
+#canvas-container {
+    /* border: 5px dashed rgb(0, 255, 255); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 580px;
+    z-index: 1;
+}
+
+#canvas-wrapper {
+    /* border: 2px dashed rgb(255, 217, 0); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 550px;
+    width: 1050px;
+    z-index: 0;
+}
+
+.canvas {
+    background-color: #000;
+    border: 1px solid var(--green-border-color);
+    border-radius: 70px;
+    /* border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px; */
+    /* border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px; */
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://i.imgur.com/0Tens7h.png);
+    z-index: 1;
+}

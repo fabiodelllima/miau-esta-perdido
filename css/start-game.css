@@ -1,0 +1,37 @@
+/* GAME START CONTAINER */
+
+#start-game-container {    
+    height: 230px;
+    width: 492px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: 10;
+}
+
+#start-game-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);       
+    z-index: 11;
+}
+
+.start-game-btn {
+    background-image: linear-gradient(0deg, #4D153C, #B30F40);
+    font-family: var(--retro-game-font);
+    text-transform: uppercase;   
+    color: #FFF;
+    border: 2px solid #B30F40; 
+    border-radius: 20px;
+    margin: 12px auto 0 auto;
+    padding: 20px;
+    width: 492px;    
+    cursor: pointer;
+}
+
+.start-game-btn:hover { 
+    background-image: linear-gradient(0deg, #4D153C, #B30F40 75%);
+
+}
