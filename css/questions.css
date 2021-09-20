@@ -57,9 +57,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-65%, -68%);
+    transform: translate(-90%, -68%);
     padding: 10px;
     height: 430px;
-    width: 705px;
+    width: 500px;
     z-index: 11;
 }
