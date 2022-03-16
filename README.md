@@ -17,9 +17,9 @@
 </p>
 
 <p align="center">
-  <a href="#sobre">Sobre</a> -
-  <a href="#storytelling--jogabilidade">Storytelling & Jogabilidade</a> -
-  <a href="#link">Link</a>
+  <a href="#sobre"><strong>Sobre</strong></a> •
+  <a href="#storytelling--jogabilidade"><strong>Storytelling & Jogabilidade</strong></a> •
+  <a href="#link"><strong>Link</strong></a>
 </p>
 
 <p align="center">
