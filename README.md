@@ -39,6 +39,6 @@ O jogo apresenta um pequeno gato, chamado Miau, que se perdeu e precisa encontra
 <br>
 
 ## Link
-O jogo pode ser acessado [neste link](https://miauestaperdido.appspot.com/) ou pelo [CodePen](https://codepen.io/fabiodelllima/full/LYLOxwZ).
+O jogo pode ser acessado [neste link](https://miauestaperdido.appspot.com/).
 
 <br>
